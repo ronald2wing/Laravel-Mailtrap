@@ -1,0 +1,155 @@
+# Laravel Mailtrap Driver - .gitignore Rules
+# ============================================
+# This is a Laravel package/library, not a full Laravel application
+
+# ============================================
+# DEPENDENCIES AND BUILD ARTIFACTS
+# ============================================
+
+# Composer dependencies
+vendor/
+
+# Node.js dependencies
+node_modules/
+
+# Build and distribution directories
+build/
+dist/
+
+# Test coverage reports
+coverage/
+
+# ============================================
+# ENVIRONMENT AND CONFIGURATION FILES
+# ============================================
+
+# Environment files (should never be committed)
+.env
+.env.*
+.env.backup
+.env.production
+.env.example
+
+# Composer authentication
+auth.json
+
+# ============================================
+# IDE AND EDITOR FILES
+# ============================================
+
+# JetBrains IDEs (PhpStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Fleet
+.fleet/
+
+# Nova
+.nova/
+
+# Zed
+.zed/
+
+# PHP Actor
+.phpactor.json
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# TESTING AND QUALITY ASSURANCE
+# ============================================
+
+# PHPUnit cache
+.phpunit.cache/
+.phpunit.result.cache
+.phpunit.cache.*
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================
+# LOGS AND TEMPORARY FILES
+# ============================================
+
+# Log files
+*.log
+logs/
+
+# Cache files
+*.cache
+*.tmp
+
+# Temporary directories
+temp/
+tmp/
+
+# ============================================
+# PHP DEVELOPMENT
+# ============================================
+
+# PHP version file
+.php-version
+
+# PHPStan cache
+.phpstan/
+
+# PHP CS Fixer configuration (generated/personal)
+.php-cs-fixer.dist.php
+
+# ============================================
+# COMPOSER
+# ============================================
+
+# Composer lock file (should NOT be committed for packages - lock dependencies for reproducible builds)
+composer.lock
+
+# ============================================
+# MISCELLANEOUS
+# ============================================
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+.dockerignore
+Dockerfile
+
+# GitHub Actions
+.github/workflows/*.log

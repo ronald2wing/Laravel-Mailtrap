@@ -1,0 +1,109 @@
+{
+    "name": "ronald2wing/laravel-mailtrap",
+    "description": "Laravel mail driver for sending emails through Mailtrap.io Email Sending Service API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "api",
+        "driver",
+        "email",
+        "laravel",
+        "mail",
+        "mailtrap",
+        "smtp",
+        "symfony",
+        "mailer",
+        "transport"
+    ],
+    "homepage": "https://github.com/ronald2wing/laravel-mailtrap",
+    "authors": [
+        {
+            "email": "ronald2wing@gmail.com",
+            "name": "Ronald Wong",
+            "homepage": "https://github.com/ronald2wing",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/mail": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.25",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.0|^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ronald2Wing\\LaravelMailtrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ronald2Wing\\LaravelMailtrap\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform-check": false,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "optimize-autoloader": true,
+        "process-timeout": 0
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/ronald2wing/laravel-mailtrap/issues",
+        "source": "https://github.com/ronald2wing/laravel-mailtrap",
+        "docs": "https://github.com/ronald2wing/laravel-mailtrap#readme",
+        "forum": "https://github.com/ronald2wing/laravel-mailtrap/discussions"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/ronald2wing"
+        }
+    ],
+    "suggest": {
+        "ext-curl": "Required for Guzzle HTTP client",
+        "ext-json": "Required for JSON processing",
+        "ext-mbstring": "Required for multibyte string handling",
+        "ext-openssl": "Required for SSL/TLS support"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ronald2Wing\\LaravelMailtrap\\MailtrapServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "lint": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "check": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ],
+        "format": "@lint --fix"
+    },
+    "scripts-descriptions": {
+        "analyse": "Run PHPStan static analysis",
+        "lint": "Run Laravel Pint code formatter",
+        "test": "Run PHPUnit tests",
+        "test-coverage": "Run PHPUnit tests with HTML coverage report",
+        "check": "Run all code quality checks (lint, analyse, test)",
+        "format": "Format code with Laravel Pint"
+    }
+}
