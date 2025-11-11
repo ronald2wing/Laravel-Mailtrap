@@ -1,0 +1,26 @@
+parameters:
+    level: 8
+    paths:
+        - src/
+
+    # Report unmatched ignored errors
+    reportUnmatchedIgnoredErrors: false
+
+    # Include PHP extensions
+    phpVersion: 80200
+
+    # Memory limit (passed via command line)
+    # memoryLimit: 1G
+
+    # Ignore common Laravel patterns
+    ignoreErrors:
+        # Laravel magic methods and properties
+        - '#^Access to an undefined property Illuminate\\Support\\[A-Za-z]+::\$[a-z_]+$#'
+        - '#^Call to an undefined method Illuminate\\Support\\[A-Za-z]+::[a-z_]+\(\)$#'
+        - '#^Method [A-Za-z\\]+::__invoke\(\) has no return typehint specified\.$#'
+
+        # Symfony Mailer components
+        - '#^Parameter .* of method Symfony\\Component\\Mailer\\Transport\\AbstractTransport::.* expects .* given\.$#'
+
+        # Guzzle HTTP client
+        - '#^Parameter .* of method GuzzleHttp\\ClientInterface::.* expects .* given\.$#'
