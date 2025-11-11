@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-11-11
+
+### Added
+- **CI/CD Pipeline**: GitHub Actions workflow for automated testing and code quality checks
+- **Static Analysis**: PHPStan configuration with level 8 analysis
+- **Build Configuration**: Added build directory to gitignore
+
+### Changed
+- **Workflow Optimization**: Updated GitHub Actions workflow with improved caching and matrix testing
+
 ## [1.0.0] - 2025-11-11
 
 ### Added
