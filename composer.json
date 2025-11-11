@@ -1,0 +1,72 @@
+{
+    "name": "ronald2wing/laravel-mailtrap",
+    "description": "Laravel mail driver for sending emails through Mailtrap.io Email Sending Service API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "api",
+        "driver",
+        "email",
+        "laravel",
+        "mail",
+        "mailtrap",
+        "smtp"
+    ],
+    "authors": [
+        {
+            "email": "ronald2wing@gmail.com",
+            "name": "Ronald Wong"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/mail": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "laravel/pint": "*",
+        "orchestra/testbench": "^8.0",
+        "phpstan/phpstan": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ronald2Wing\\LaravelMailtrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ronald2Wing\\LaravelMailtrap\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform-check": false,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/ronald2wing/laravel-mailtrap/issues",
+        "source": "https://github.com/ronald2wing/laravel-mailtrap"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ronald2Wing\\LaravelMailtrap\\MailtrapServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "lint": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}
