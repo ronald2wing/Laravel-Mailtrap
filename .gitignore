@@ -1,0 +1,40 @@
+# Composer
+vendor/
+composer.lock
+auth.json
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDEs & editors
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.fleet/
+.nova/
+.zed/
+.phpactor.json
+*.swp
+*.swo
+*~
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing & static analysis
+.phpunit.cache/
+.phpunit.result.cache
+.phpstan/
+coverage/
+
+# Logs
+*.log
