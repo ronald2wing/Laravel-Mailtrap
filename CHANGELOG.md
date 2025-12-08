@@ -8,16 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2025-11-11
 
 ### Added
+
 - **CI/CD Pipeline**: GitHub Actions workflow for automated testing and code quality checks
 - **Static Analysis**: PHPStan configuration with level 8 analysis
 - **Build Configuration**: Added build directory to gitignore
 
 ### Changed
+
 - **Workflow Optimization**: Updated GitHub Actions workflow with improved caching and matrix testing
 
 ## [1.0.0] - 2025-11-11
 
 ### Added
+
 - **Initial Release**: Complete Laravel Mailtrap Driver package
 - **Core Integration**: Full Mailtrap Email Sending API integration
 - **Framework Support**: Laravel 10.x, 11.x, and 12.x compatibility
@@ -43,13 +46,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Auto-discovery for Laravel service provider
 
 ### Technical Details
+
 - **Dependencies**: PHP 8.2+, GuzzleHTTP 7.0+
 - **Architecture**: Symfony Mailer transport implementation
 - **Testing**: Orchestra Testbench with Mockery for HTTP mocking
 - **Code Quality**: 100% type coverage with PHPStan level 8
 
 ### Breaking Changes
+
 - None (initial release)
 
 ### Migration Guide
+
 - No migration needed for initial release
